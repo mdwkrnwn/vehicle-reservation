@@ -37,6 +37,8 @@ composer install
 cp .env.example .env
 php artisan key:generate
 
+
+
 Selanjutnya buat database kosong di MySQL dan sesuaikan konfigurasi database pada file .env. Aplikasi ini tidak menggunakan file database (.sql) karena struktur database dan data awal dibuat otomatis menggunakan Laravel Migration dan Seeder. Jalankan perintah berikut untuk membuat tabel sekaligus mengisi data dummy seperti Admin, Pihak Penyetuju, Kendaraan, dan Driver:
 php artisan migrate --seed
 Setelah proses selesai, jalankan aplikasi dengan perintah:
